@@ -40,21 +40,20 @@ put the monaco-editor's loader into your project's index.html
 follow the offical [demo](https://github.com/microsoft/monaco-editor-samples/blob/main/browser-amd-localized/index.html)
 
 ```javascript
+	window.require.config({
+        	paths: { vs: '../node_modules/monaco-editor/min/vs' }
+		'vs/nls': {
+			availableLanguages: {
+				'*': 'de'
+			}
+		}
+	});
 
-			window.require.config({
-        paths: { vs: '../node_modules/monaco-editor/min/vs' }
-				'vs/nls': {
-					availableLanguages: {
-						'*': 'de'
-					}
-				}
-			});
-
-			window.require(['vs/editor/editor.main'], function () {
-				var editor = monaco.editor.create(document.getElementById('container'), {
-					value: ['function x() {', '\tconsole.log("Hello world!");', '}'].join('\n'),
-					language: 'javascript'
-				});
-			});
+	window.require(['vs/editor/editor.main'], function () {
+		var editor = monaco.editor.create(document.getElementById('container'), {
+			value: ['function x() {', '\tconsole.log("Hello world!");', '}'].join('\n'),
+			language: 'javascript'
+		});
+	});
 ```
 use window.require not require to avoid webpack compile the require
