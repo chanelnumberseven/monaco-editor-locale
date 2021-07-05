@@ -1,7 +1,7 @@
 # monaco-editor-locale
 localization with esm
 
-## Use copy-webpack-plugin to copy the files of monaco-editor/min/vs into your project‘s build directory  in your webpack.config.js
+Use copy-webpack-plugin to copy the files of monaco-editor/min/vs into your project‘s build directory  in your webpack.config.js
 
 ```js
 
@@ -21,7 +21,7 @@ localization with esm
   }
 ```
 
-## put the monaco-editor's loader into your project's index.html
+put the monaco-editor's loader into your project's index.html
 
 ```html
 <!DOCTYPE html>
@@ -37,7 +37,7 @@ localization with esm
 
 ```
 
-## follow the offical [demo](https://github.com/microsoft/monaco-editor-samples/blob/main/browser-amd-localized/index.html)
+follow the offical [demo](https://github.com/microsoft/monaco-editor-samples/blob/main/browser-amd-localized/index.html)
 
 ```javascript
 
