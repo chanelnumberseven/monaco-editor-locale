@@ -41,7 +41,7 @@ follow the offical [demo](https://github.com/microsoft/monaco-editor-samples/blo
 
 ```javascript
 	window.require.config({
-        	paths: { vs: '../node_modules/monaco-editor/min/vs' }
+        	paths: { vs: '/vs' }
 		'vs/nls': {
 			availableLanguages: {
 				'*': 'de'
