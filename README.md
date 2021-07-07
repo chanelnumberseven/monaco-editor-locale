@@ -50,7 +50,7 @@ follow the offical [demo](https://github.com/microsoft/monaco-editor-samples/blo
 	});
 
 	window.require(['vs/editor/editor.main'], function () {
-		var editor = monaco.editor.create(document.getElementById('container'), {
+		var editor = monaco.editor.create(container, {
 			value: ['function x() {', '\tconsole.log("Hello world!");', '}'].join('\n'),
 			language: 'javascript'
 		});
